@@ -1,0 +1,751 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-line {
+    font-size: 14px;
+    color: #f1f1f3;
+    font-weight: 400;
+    background-color: black;
+}
+
+.Telephone_Adress {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Telephone_Adress a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-content {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.header-content a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #151517;
+}
+
+.adress {
+    position: relative;
+    color: #f1f1f3;
+    text-decoration: none;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.adress:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/bg_point.png);
+    transform: translateY(-50%);
+}
+
+.number:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(/img/bg_phone.png);
+    transform: translateY(-50%);
+}
+
+.number {
+    position: relative;
+    color: #f1f1f3;
+    text-decoration: none;
+    font-style: normal;
+    transition: all .5s;
+}
+
+.EatMe {
+    padding-top: 15px;
+}
+
+.header-content a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f5ed08;
+    transition: 0.5s ease;
+}
+
+.header-content a:hover::before {
+    width: 0%;
+    transition: 0.5s;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background-color: #f5ed08;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+}
+
+.circle a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #000;
+    border-top: none;
+    border-left: none;
+}
+
+.left {
+    left: 5%;
+}
+
+.right {
+    right: 5%;
+}
+
+.left::before {
+    transform: rotate(135deg) translate(-25%, 50%);
+}
+
+.right::before {
+    transform: rotate(-45deg) translate(0, -75%);
+}
+
+.circle2 a {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background-color: #f5ed08;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.circle2 a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #000;
+    border-top: none;
+    border-left: none;
+}
+
+.Circles h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.Circles p {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.BuyItem {
+    width: 220px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-decoration: none;
+    display: flex;
+    margin-left: 43%;
+    justify-content: center;
+}
+
+.menu {
+    position: relative;
+    background: #000;
+    height: 50vh;
+    background: url(/img/bg_sweet_soup.png) center no-repeat;
+}
+
+.BuyItem:hover {
+    transition: 0.5s;
+    background-color: gray;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    padding-top: 10%;
+}
+
+.main a {
+    margin-left: 50px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f3;
+}
+
+.main-info h2 {
+    margin-left: 45%;
+}
+
+.main-info p {
+    color: #878787;
+}
+
+.Text_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Text_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Text_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.Text_4 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-info2 {
+    background: url(/img/bg_backround_1.png);
+    color: white;
+    padding: 5%;
+}
+
+.Text_5 {
+    margin-left: 100px;
+}
+
+.Button {
+    width: 240px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    margin-left: 26%;
+}
+
+.main-info2-p {
+    margin-left: 23%;
+}
+
+.main-info3 h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Button_1 {
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin-left: 50px;
+}
+
+.Button_2 {
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.Button_3 {
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.Button_4 {
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #f5ed08;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.Button_1:hover {
+    transition: 0.5s;
+    background-color: #878787;
+    text-decoration: underline;
+}
+
+.Button_2:hover {
+    transition: 0.5s;
+    background-color: #878787;
+    text-decoration: underline;
+}
+
+.Button_3:hover {
+    transition: 0.5s;
+    background-color: #878787;
+    text-decoration: underline;
+}
+
+.Button_4:hover {
+    transition: 0.5s;
+    background-color: #878787;
+    text-decoration: underline;
+}
+
+.Button:hover {
+    transition: 0.5s;
+    background-color: #878787;
+    text-decoration: underline;
+}
+
+.main-info4 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 170px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #f5ed08;
+    padding: 13px 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin-left: 45%;
+}
+
+.main-info4 a {
+    text-decoration: none;
+}
+
+.photos picture {
+    display: inline-block;
+    width: 20%;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.photos {
+    display: flex;
+}
+
+.Buttons {
+    text-align: center;
+}
+
+.main-info3 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.main-info5 h2 {
+    margin-left: 45%;
+}
+
+.Text-5 {
+    margin-left: 29%;
+    color: #878787;
+}
+
+.Text-6 {
+    margin-left: 30%;
+    color: #878787;
+}
+
+.Text-7 {
+    margin-left: 35%;
+    color: #878787;
+}
+
+.img1 {
+    margin-left: 45%;
+}
+
+.photo-6 {
+    margin-left: 50%;
+}
+
+.main-info6 h2 {
+    margin-left: 48%;
+}
+
+.main-info6 p {
+    margin-left: 49%;
+    color: #878787;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 160px 0;
+    background-image: url(./img/bg_map.png);
+}
+
+.box {
+    width: 300px;
+    height: 170px;
+    border-radius: 8px;
+    background-color: #151517;
+    padding-top: 33px;
+}
+
+.box a {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 73px;
+    margin-top: 19px;
+}
+
+.point::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -31px;
+    width: 11px;
+    height: 15px;
+    background-image: url(/img/bg_point6.png);
+    transform: translateY(-50%);
+}
+
+.phone2::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    background-image: url(/img/bg_phone2.png);
+    transform: translateY(-50%);
+}
+
+.mail::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 16px;
+    height: 11px;
+    background-image: url(/img/bg_mail.png);
+    transform: translateY(-50%);
+}
+
+.skype2::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-image: url(/img/bg_skype2.png);
+    transform: translateY(-50%);
+}
+
+.last {
+    background-color: #000;
+    display: flex;
+    padding-bottom: 95px;
+}
+
+.EatMe2 {
+    color: #f1f1f3;
+    margin-left: 375px;
+}
+
+.EatMe3 {
+    color: white;
+    margin-left: 100px;
+}
+
+.pack {
+    display: flex;
+    flex-direction: column;
+}
+
+.Main2 {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.category {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.delivery {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sell {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contacts {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.Main2:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.category:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.delivery:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.sell:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.about:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.contacts:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #f5ed08;
+}
+
+.EatMe4 {
+    color: #ffffff;
+    margin-left: 95px;
+}
+
+.pack2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box a:hover {
+    transition: 0, 5s;
+    color: #f1f1f3;
+    text-decoration: none;
+}
+
+.pack2 a {
+    text-decoration: none;
+    color: #f1f1f3;
+}
+
+.pack2 a:hover {
+    transition: 0, 5s;
+    color: #f5ed08;
+    text-decoration: underline;
+}
+
+.point3 {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 35px;
+    margin-top: 19px;
+}
+
+.point3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -31px;
+    width: 11px;
+    height: 15px;
+    background-image: url(/img/bg_point6.png);
+    transform: translateY(-50%);
+}
+
+.number2 {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 35px;
+    margin-top: 19px;
+}
+
+.number2:before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    background-image: url(/img/bg_phone2.png);
+    transform: translateY(-50%);
+}
+
+.gmail {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 35px;
+    margin-top: 19px;
+}
+
+.gmail:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 16px;
+    height: 11px;
+    background-image: url(/img/bg_mail.png);
+    transform: translateY(-50%);
+}
+
+.last1 {
+    color: #f1f1f3;
+    margin-left: 20px;
+}
+
+.box2 {
+    opacity: 0.200;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #151517;
+    border: 1px solid #ffffff;
+}
+
+.box2 a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #878787;
+    font-weight: 300;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.last2{
+    color: #f1f1f3;
+}
